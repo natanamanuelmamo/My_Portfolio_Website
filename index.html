@@ -26,8 +26,6 @@
 
     <title>Portfolio | Natan</title>
   </head>
-<body>
-
   <body>
     <div class="container">
       <!-- --------------- HEADER --------------- -->
@@ -70,15 +68,11 @@
           </button>
         </div>
         <div class="nav-menu-btn">
-          <i class="uil uil-bars"></i>
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
 
-
-
-
-
-
+      <!-- -------------- MAIN ---------------- -->
       <main class="wrapper">
         <!-- -------------- FEATURED BOX ---------------- -->
         <section class="featured-box" id="home">
@@ -150,32 +144,616 @@
         </section>
 
         <hr>
-        
+        <div id="skills"></div>
+
+        <!-- this is the Skills section -->
+        <section >
+        <!-- <section id="skills"> -->
+          <div class="Skills">
+            <h1 class="skills-title">Skills</h1>
+            <div class="all-skills">
+              <div class="frontandmobile">
+                <div class="frontend-Developer">
+                  <h3><i class="fa-solid fa-code"></i> Frontend Development</h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/html_1051277.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>HTML</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/css-3_732190.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>CSS</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/javascript.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>JAVASCRIPT</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/r.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>REACT</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="mobile-app-development">
+                  <h3><i class="fa-solid fa-mobile-screen"></i> Mobile App</h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/2048px-Dart_programming_language.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>DART</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/raf_360x360_075_t_fafafaca443f47-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>FLUTTER</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/java.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>JAVA</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/file-type-kotlin-icon-512x512-mn.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>KOTLIN</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="backendandDesign skillmid">
+                <div class="Backend-Developer">
+                  <h3>
+                    <i class="fa-solid fa-server"></i> Backend Development
+                  </h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/python.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>PYTHON</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/django.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>DJANGO</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/av13qdhu4-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>MYSQL</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/Rest.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>REST API</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="Design-Tools">
+                  <h3><i class="fa-solid fa-palette"></i> Design Tools</h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/photoshop-icon-1024x999-xhts0syq.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>PHOTOSHOP</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/figma.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>FIGMA</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/canva-icon.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>CANVA</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/Premiere-Pro-CC-for-Teams_5305_4.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>PREMIERE PRO</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="backendandDesign alldev">
+                <div class="Backend-Developer">
+                  <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/256.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>NUMPY</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/images__1_-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>PANDAS</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/1024px-Matplotlib_icon.svg.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>MATPLOTLIB</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/images__2_-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>SCIKIT LEARN</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="Design-Tools">
+                  <h3><i class="fa-solid fa-plus"></i> Others</h3>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/free-git-logo-icon-download-in-s.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>GIT</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/Visual_Studio_Code_1.35_icon.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>VS CODE</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="pt1">
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/642d3f5aab70ee48f4ff3920_jira-ic-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>JIRA</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <div class="background">
+                        <img
+                          class="bouncy-image"
+                          src="./assets/images/icons/png-transparent-trello-android-a-removebg-preview.png"
+                          alt=""
+                          width="85px"
+                        />
+                      </div>
+                      <figcaption>
+                        <h4>TRELLO</h4>
+                        <p>Intermediate</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
         <hr>
-        
-        <hr>
+        <div id="Qualification"></div>
+
+        <!-- this is the Qualification section -->
+        <section>
+        <section id="Qualification">
+          <div class="Qualification">
+            <h1 class="Qualificationtxt">Qualification</h1>
+            <p class="experience-txt">Experience & education</p>
+            <div class="Qualification-category">
+              <div class="education">
+                <h4><i class="fa-solid fa-book"></i> Education</h4>
+                <h2>Software Engineering</h2>
+                <p>Addis Ababa University</p>
+                <p>Sep 2021 - Current</p>
+                <h2>Machine Learning</h2>
+                <p>UNDP Frontier Tech Leaders</p>
+                <p>Feb 2025 - Current</p>
+                <h2>Android Development</h2>
+                <p>Udacity</p>
+                <p>May 2024 - Aug 2024</p>
+              </div>
+              <div class="Work">
+                <h4><i class="fa-solid fa-building"></i> work</h4>
+                <h2>Frontend Developer</h2>
+                <p>Fanaye Technologies</p>
+                <p>Feb 2025 - Current</p>
+                <h2>Full-Stack Developer</h2>
+                <p>Simba Tech</p>
+                <p>Feb 2025 - Current</p>
+               
+              </div>
+            </div>
+          </div>
+        </section>
 
         <hr>
 
+        <!-- -------------- PROJECT BOX ---------------- -->
+<!-- 
+        
+        <section class="section" >
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+              <i class="uil uil-briefcase-alt"></i>
+              <h3>Completed</h3>
+              <label>8+ Finished Projects</label>
+            </div>
+            <div class="project-box">
+              <i class="uil uil-users-alt"></i>
+              <h3>Clients</h3>
+              <label>5+ Happy Clients</label>
+            </div>
+            <div class="project-box">
+              <i class="uil uil-award"></i>
+              <h3>Experience</h3>
+              <label>4+ Years in the field</label>
+            </div>
+          </div>
+        </section>
+
+        <hr> -->
 
 
+        <!-- -------------------project box 2 -------------------- -->
 
+        <section class="projectts section" id="projects">
+          <!-- <h3 class="section__subtitle">
+             My <span>Jobs</span>
+          </h3> -->
+          <div class="top-header">
+            <h1 class="project_header">Projects</h1>
+          </div>
+        
+          <div class="projects__container container grid"> 
+            <div class="two_by_two_section left-slide">
+            <article class="projects__card ">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank"  class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
 
+            <article class="projects__card ">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank" class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
+
+          
+          
+
+            <article class="projects__card">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank" class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
+
+          </div>
+
+          <div class="two_by_two_section right-slide">
+            <article class="projects__card">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank" class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
+
+          
 
         
+          
+
+            <article class="projects__card">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank" class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
+
+            <article class="projects__card">
+              <img src="./assets/images/Capture14.jpg" class="projects__img" alt="" >
+             <div class="projects__model">
+              <span class="projects__subtitle">Web</span>
+              <h2 class="projects__title"> E commerce website</h2>
+              <a href="https://grand-side-addis.netlify.app/" target="_blank" class="projects__button">
+                View demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+             </div> 
+            </article>
+
+
+          </div>
+
+         
+          
+          </div>
+
+        </section>
+
+        <hr>
+
+
+
+
+
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i> Email:
+                  natanamanuelmamo@gmail.com
+                </p>
+                <p><i class="uil uil-phone"></i> Tel: +251 966 935 191</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Name" />
+                  <input type="text" class="input-field" placeholder="Email" />
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn" onclick="window.location.href='mailto:natanamanuelmamo@gmail.com'">
+                    Send <i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-
-
-
-
-
-
-
-
-
-      
 
       <!-- --------------- FOOTER --------------- -->
       <footer>
@@ -219,7 +797,6 @@
       </footer>
     </div>
 
+    
   </body>
-  
-</body>
 </html>
