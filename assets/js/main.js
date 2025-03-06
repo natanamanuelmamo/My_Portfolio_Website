@@ -30,3 +30,73 @@ function headerShadow() {
 
   }
 }
+
+/* ----- TYPING EFFECT ----- */
+var typingEffect = new Typed(".typedText",{
+  strings : ["Frontend Developer","Backend Developer","AI Developer"],
+  loop : true,
+  typeSpeed : 100, 
+  backSpeed : 80,
+  backDelay : 2000
+})
+
+
+/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+const sr = ScrollReveal({
+      origin: 'top',
+      distance: '80px',
+      duration: 2000,
+      reset: true     
+})
+
+/* -- HOME -- */
+sr.reveal('.featured-text-card',{})
+sr.reveal('.featured-name',{delay: 100})
+sr.reveal('.featured-text-info',{delay: 200})
+sr.reveal('.featured-text-btn',{delay: 200})
+sr.reveal('.social_icons',{delay: 200})
+sr.reveal('.featured-image',{delay: 300})
+
+
+/* -- PROJECT BOX -- */
+sr.reveal('.project-box',{interval: 200})
+// sr.reveal('.alldev',{interval: 200})
+
+/* -- HEADINGS -- */
+sr.reveal('.top-header',{})
+sr.reveal('.skills-title',{})
+sr.reveal('.skillmid',{})
+sr.reveal('.Qualificationtxt',{})
+sr.reveal('.experience-txt',{})
+
+/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+
+/* -- ABOUT INFO & CONTACT INFO -- */
+const srLeft = ScrollReveal({
+origin: 'left',
+distance: '80px',
+duration: 2000,
+reset: true
+})
+
+srLeft.reveal('.about-info',{delay: 100})
+srLeft.reveal('.frontandmobile',{delay: 100})
+srLeft.reveal('.contact-info',{delay: 100})
+srLeft.reveal('.education',{delay: 100})
+srLeft.reveal('.aboutimg',{delay: 100})
+srLeft.reveal('.left-slide',{delay: 100})
+
+
+/* -- ABOUT SKILLS & FORM BOX -- */
+const srRight = ScrollReveal({
+origin: 'right',
+distance: '80px',
+duration: 2000,
+reset: true
+})
+
+srRight.reveal('.skills-box',{delay: 100})
+srRight.reveal('.form-control',{delay: 100})
+srRight.reveal('.Work',{delay: 100})
+srRight.reveal('.alldev',{delay: 100})
+srRight.reveal('.right-slide',{delay: 100})
